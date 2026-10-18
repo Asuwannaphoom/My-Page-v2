@@ -1,0 +1,417 @@
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Tahoma, sans-serif;
+  background: #F7F2EB;
+  color: #EEEEEE;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  color: #F7F2EB;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  min-height: 72px;
+  padding: 16px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #EAE2D6;
+  border-bottom: 1px solid #fefefe;
+}
+
+.logo {
+  color: #8E9162;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+ 
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.navbar nav a {
+  color: #000000;
+  transition: color 0.2s;
+}
+
+.navbar nav a:hover {
+  color: #c8c8c8;
+}
+
+.navbar nav .nav-button {
+  background: #8E9162;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+
+/* ===== Hero / Profile ===== */
+.hero {
+  padding: 55px 8%;
+  background:
+  #8B9A6E;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 25px #feffff55;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 280px;
+  max-width: 650px;
+}
+
+.profile-info h1 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+
+
+/* ===== Profile Table ===== */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #6A795D;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info-table th,
+.info-table td {
+  text-align: left;
+  padding: 10px 14px;
+  border: 1px solid #D9D28B;
+}
+
+.info-table th {
+  color: #F7F2EB;
+  width: 40%;
+}
+
+/* ===== Content Cards ===== */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 30px 8%;
+}
+
+.card {
+  background: #6A795D;
+  border: 1px solid #EEEEEE;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 25px #00000055;
+}
+
+.card h2 {
+  color: #F7F2EB;
+}
+
+.card p,
+.card li {
+  font-size: 0.95rem;
+}
+
+.card ul,
+.card ol {
+  padding-left: 22px;
+}
+
+/* ===== Skills Table ===== */
+.skills-section {
+  margin: 0 8% 30px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.skills-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #D9D28B;
+}
+
+.skills-table th {
+  background: #8B9A6E;
+  color: #EEEEEE;
+}
+
+
+
+.skills-table td:last-child {
+  min-width: 160px;
+  white-space: nowrap;
+}
+
+.progress {
+  display: inline-block;
+  width: 100px;
+  height: 10px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background: #aed190;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: #8B9A6E;
+  border-radius: inherit;
+}
+
+/* ===== Contact CTA ===== */
+.contact-cta {
+  text-align: center;
+  padding: 40px 20px 55px;
+  color: #587138;
+}
+
+.contact-cta h2 {
+  font-size: 1.8rem;
+  color: #587138;
+}
+.contact-cta p {
+  
+  color: #587138;
+}
+.button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 25px;
+  background: #8B9A6E;
+  color: white;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.button:hover {
+  
+  transform: translateY(-2px);
+}
+
+/* ===== Contact Form ===== */
+.contact-page {
+  max-width: 850px;
+  margin: auto;
+  padding: 55px 24px;
+}
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8B9A6E;
+}
+
+.contact-heading .eyebrow {
+  color: #8B9A6E;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.contact-heading h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.3;
+  margin: 10px 0;
+}
+
+.contact-form {
+  padding: 30px;
+  background: #EAE2D6;
+  border: 1px solid #ffffff;
+  border-radius: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #8B9A6E;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 13px 15px;
+  color: #8B9A6E;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid #8B9A6E;
+  border-color: transparent;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  color: white;
+  background: #8B9A6E;
+  border: none;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #6A795D;
+
+
+}
+
+/* ===== Footer ===== */
+.footer {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  background: #020b1b;
+  border-top: 1px solid #1e3a5f;
+}
+
+.footer div {
+  display: flex;
+  gap: 20px;
+}
+
+.footer a {
+  color: #8B9A6E;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar nav {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-info {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar nav {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 35px 5%;
+  }
+
+  .content-grid {
+    padding: 20px 5%;
+  }
+
+  .skills-section {
+    margin: 0 5% 25px;
+    padding: 14px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
